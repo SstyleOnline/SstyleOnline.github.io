@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Logo_style.png" type="image/x-icon">
+</head>
+<body onload="saberalto()" onresize="saberalto()">
+
+<section id="banner">
+    <!--Header-->
+    <header>
+        <div class="contenedor_navegacion">
+            <div class="logo">
+                <img src="img/logo2.png" alt="logo" >
+                <h1>Style Online</h1>
+            </div>
+            
+            <div id="menu_btn">
+                <label for="menu"><img src="img/icono_menu_hamburguesa.png" alt=""></label>
+            </div>
+
+            <input type="checkbox" name="menu" id="menu">
+
+            <nav id="navegador">
+                
+                <ul> 
+                    <a href="#banner"><li>Inicio</li></a>
+                    <a href="#productos"><li>Productos</li></a>
+                    <a href="#acerca_de_nosotros"><li>Acerca de nosotros</li></a>
+                    <a href="#info_metodosdecompra"><li>Metodos</li></a>
+                    <a href="#nuestras_redes"><li>Contactanos</li></a>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+
+    <div id="banner_conten" class="contenedor">
+        <h2>Tienda Online</h2>
+        <p>Bienvenidos al sitio web oficial de Style!!!<br> Donde encontraras todos nuestros productos actualizados e informacion sobre nosotros!!!<br>Tambien podras seleccionar tus productos y ver todas sus caracteristicas...</p>
+        <form action="#productos"><button>Comencemos</button></form>
+        
+    </div>
+
+</section>
+
+
+<!--Todos los productos-->
+<main id="productos">
+
+
+
+    <div class="titulo">
+        <div class="contenedor_titulo">
+            <h2>Nuestros productos</h2>
+            <select name="productos_selector" id="productos_selector" onclick="selec()">
+                <option value="Todos">Todos</option>
+                <option value="Zapatillas" >Zapatillas</option>
+                <option value="botines">Botines</option>
+                <option value="Crocs">Crocs</option>
+                <option value="Borcegos">Borcegos</option>
+                <option value="Sandalias">Sandalias</option>
+                <option value="Pantuflas">Pantuflas</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="click">Click sobre la imagen que te interesa para desplegar caracteristicas</div>
+
+    <div id="contenedor_cartas">
+        
+        <section id="zapatillas">
+
+            
+            
+
+            <!--RHINERS-->
+            <div class="fondo_emergente zapatilla" id="f1">
+            <div class="carta" id="z1">
+                <div class="imagen_producto">
+                    <img onclick="emergente(1)" id="1" src="img/Zapatillas/Zapatillas 1/1.jpeg" alt="">
+                </div>
+                <div class="descripcion" id="d1">
+                    <p class="salida" id="x1" onclick="emergente_salir(1)">x</p>
+                    <p class="categoria" id="c1">Zapatillas</p>
+                    <h3 class="nombre" id="m1">RHINERS</h3>
+                    <p class="precio" id="p1">$5.800</p>
+                    <div  id="talle1" class="talles">
+                        <p>Talles disponibles</p>
+                        <select name="talles" id="t1">
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+
+                        </select>
+                        <p>Colores disponibles</p>
+                    </div>
+                    <div class="colores">
+                        <button class="negro" onclick="colores(1,1)"></button><button class="blanco" onclick="colores(1,3)"></button><button class="azul" onclick="colores(1,2)"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <!--Borcego-ECONOMICO3-->
+            <div class="fondo_emergente" id="f2">
+                <div class="carta" id="z2">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(2)" id="2" src="img/Zapatillas/Zapatillas 2/1.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d2">
+                        <p class="salida" id="x2" onclick="emergente_salir(2)">x</p>
+                        <p class="categoria" id="c2">Borcegos</p>
+                        <h3 class="nombre" id="m2">ECONOMICOS</h3>
+                        <p class="precio" id="p2">$6900</p>
+                        <div  id="talle2" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t2">
+                                <option value="17">27</option>
+                                <option value="18">28</option>
+                                <option value="19">29</option>
+                                <option value="20">30</option>
+                                <option value="21">31</option>
+                                <option value="22">32</option>
+                                <option value="17">33</option>
+                                <option value="18">34</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="negro" onclick="colores(2,1)"></button><button class="marron" onclick="colores(2,4)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <!--botines-adultos-->
+                <div class="fondo_emergente" id="f3">
+                    <div class="carta" id="z3">
+                        <div class="imagen_producto">
+                            <img onclick="emergente(3)" id="3" src="img/Zapatillas/Zapatillas 3/7.jpeg" alt="">
+                        </div>
+                        <div class="descripcion" id="d3">
+                            <p class="salida" id="x3" onclick="emergente_salir(3)">x</p>
+                            <p class="categoria" id="c3">Botines</p>
+                            <h3 class="nombre" id="m3">RHINERS ADULTOS</h3>
+                            <p class="precio" id="p3">$6700</p>
+                            <div  id="talle3" class="talles">
+                                <p>Talles disponibles</p>
+                                <select name="talles" id="t3">
+                                    <option value="17">27</option>
+                                    <option value="18">28</option>
+                                    <option value="19">29</option>
+                                    <option value="20">30</option>
+                                    <option value="21">31</option>
+                                    <option value="22">32</option>
+                                    <option value="17">33</option>
+                                    <option value="18">34</option>
+                                </select>
+                                <p>Colores disponibles</p>
+                            </div>
+                            <div class="colores">
+                                <button class="gris" onclick="colores(3,7)"></button><button class="rosa" onclick="colores(3,6)"></button><button class="negro" onclick="colores(3,1)"></button><button class="amarillo" onclick="colores(3,5)"></button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!--botines-niño-->
+                    <div class="fondo_emergente" id="f4">
+                        <div class="carta" id="z4">
+                            <div class="imagen_producto">
+                                <img onclick="emergente(4)" id="4" src="img/Zapatillas/Zapatillas 4/8.jpeg" alt="">
+                            </div>
+                            <div class="descripcion" id="d4">
+                                <p class="salida" id="x4" onclick="emergente_salir(4)">x</p>
+                                <p class="categoria" id="c4">Botines</p>
+                                <h3 class="nombre" id="m4">RHINERS NIÑO</h3>
+                                <p class="precio" id="p4">$6900</p>
+                                <div  id="talle4" class="talles">
+                                    <p>Talles disponibles</p>
+                                    <select name="talles" id="t4">
+                                        <option value="17">35</option>
+                                        <option value="18">36</option>
+                                        <option value="19">37</option>
+                                        <option value="20">38</option>
+                                        <option value="21">39</option>
+                                        <option value="22">40</option>
+                                        <option value="17">41</option>
+                                        <option value="18">42</option>
+                                        <option value="17">43</option>
+                                        <option value="18">44</option>
+                                    </select>
+                                    <p>Colores disponibles</p>
+                                </div>
+                                <div class="colores">
+                                    <button class="rojo" onclick="colores(4,8)"></button><button class="negro" onclick="colores(4,1)"></button><button class="amarillo" onclick="colores(4,5)"></button><button class="gris" onclick="colores(4,7)"></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <!--Borcego-CUERO-->
+                        <div class="fondo_emergente" id="f5">
+                            <div class="carta" id="z5">
+                                <div class="imagen_producto">
+                                    <img onclick="emergente(5)" id="5" src="img/Zapatillas/Zapatillas 5/4.jpeg" alt="">
+                                </div>
+                                <div class="descripcion" id="d5">
+                                    <p class="salida" id="x5" onclick="emergente_salir(5)">x</p>
+                                    <p class="categoria" id="c5">Borcegos</p>
+                                    <h3 class="nombre" id="m5">CUERO</h3>
+                                    <p class="precio" id="p5">$7100</p>
+                                    <div  id="talle5" class="talles">
+                                        <p>Talles disponibles</p>
+                                        <select name="talles" id="t5">
+                                            <option value="17">35</option>
+                                            <option value="18">36</option>
+                                            <option value="19">37</option>
+                                            <option value="20">38</option>
+                                            <option value="21">39</option>
+                                            <option value="22">40</option>
+                                        </select>
+                                        <p>Colores disponibles</p>
+                                    </div>
+                                    <div class="colores">
+                                        <button class="negro" onclick="colores(5,1)"></button><button class="marron" onclick="colores(5,4)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            
+
+                        <!--pantuflas Mujer-->
+                        <div class="fondo_emergente" id="f6">
+                            <div class="carta" id="z6">
+                                <div class="imagen_producto">
+                                    <img onclick="emergente(6)" id="6" src="img/Zapatillas/Zapatillas 6/9.jpeg" alt="">
+                                </div>
+                                <div class="descripcion" id="d6">
+                                    <p class="salida" id="x6" onclick="emergente_salir(6)">x</p>
+                                    <p class="categoria" id="c6">Pantuflas</p>
+                                    <h3 class="nombre" id="m6">MUJER</h3>
+                                    <p class="precio" id="p6">$2500</p>
+                                    <div  id="talle6" class="talles">
+                                        <p>Talles disponibles</p>
+                                        <select name="talles" id="t6">
+                                            <option value="17">35</option>
+                                            <option value="18">36</option>
+                                            <option value="19">37</option>
+                                            <option value="20">38</option>
+                                            <option value="21">39</option>
+                                            <option value="22">40</option>
+                                        </select>
+                                        <p>Colores disponibles</p>
+                                    </div>
+                                    <div class="colores">
+                                        <button class="negro" onclick="colores(6,1)"></button><button class="violeta" onclick="colores(6,9)"></button><button class="rojo" onclick="colores(6,8)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        <!--pantuflas hombres-->
+                        <div class="fondo_emergente" id="f7">
+                            <div class="carta" id="z7">
+                                <div class="imagen_producto">
+                                    <img onclick="emergente(7)" id="7" src="img/Zapatillas/Zapatillas 7/2.jpeg" alt="">
+                                </div>
+                                <div class="descripcion" id="d7">
+                                    <p class="salida" id="x7" onclick="emergente_salir(7)">x</p>
+                                    <p class="categoria" id="c7">Pantuflas</p>
+                                    <h3 class="nombre" id="m7">HOMBRE</h3>
+                                    <p class="precio" id="p7">$2500</p>
+                                    <div  id="talle7" class="talles">
+                                        <p>Talles disponibles</p>
+                                        <select name="talles" id="t7">
+                                            <option value="22">41</option>
+                                            <option value="22">42</option>
+                                            <option value="22">43</option>
+                                            <option value="22">44</option>
+                                        </select>
+                                        <p>Colores disponibles</p>
+                                    </div>
+                                    <div class="colores">
+                                        <button class="negro" onclick="colores(7,1)"></button><button class="azul" onclick="colores(7,2)"></button><button class="gris" onclick="colores(7,7)"></button><button class="azul" onclick="colores(7,22)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        
+                            <!--ZAPATILLAS lecop -->
+                        <div class="fondo_emergente" id="f8">
+                            <div class="carta" id="z8">
+                                <div class="imagen_producto">
+                                    <img onclick="emergente(8)" id="8" src="img/Zapatillas/Zapatillas 8/1.jpeg" alt="">
+                                </div>
+                                <div class="descripcion" id="d8">
+                                    <p class="salida" id="x8" onclick="emergente_salir(8)">x</p>
+                                    <p class="categoria" id="c8">Zapatillas</p>
+                                    <h3 class="nombre" id="m8"> LE COQ</h3>
+                                    <p class="precio" id="p8">$6800</p>
+                                    <div  id="talle8" class="talles">
+                                        <p>Talles disponibles</p>
+                                        <select name="talles" id="t8">
+                                            <option value="17">27</option>
+                                            <option value="18">28</option>
+                                            <option value="19">29</option>
+                                            <option value="20">30</option>
+                                            <option value="21">31</option>
+                                            <option value="22">32</option>
+                                            <option value="17">33</option>
+                                            <option value="18">34</option>
+                                        </select>
+                                        <p>Colores disponibles</p>
+                                    </div>
+                                    <div class="colores">
+                                        <button class="negro" onclick="colores(8,1)"></button><button class="blanco" onclick="colores(8,3)"></button><button class="rosa" onclick="colores(8,6)"></button><button class="gris" onclick="colores(8,7)"></button><button class="rojo" onclick="colores(8,8)"></button><button class="violeta" onclick="colores(8,9)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                       <!--ZAPATILLAS lecop adulto-->
+                       <div class="fondo_emergente" id="f9">
+                        <div class="carta" id="z9">
+                            <div class="imagen_producto">
+                                <img onclick="emergente(9)" id="9" src="img/Zapatillas/Zapatillas 9/1.jpeg" alt="">
+                            </div>
+                            <div class="descripcion" id="d9">
+                                <p class="salida" id="x9" onclick="emergente_salir(9)">x</p>
+                                <p class="categoria" id="c9">Zapatillas</p>
+                                <h3 class="nombre" id="m9"> LE COQ ADULTOS</h3>
+                                <p class="precio" id="p9">$6100</p>
+                                <div  id="talle9" class="talles">
+                                    <p>Talles disponibles</p>
+                                    <select name="talles" id="t9">                    
+                                        <option value="17">35</option>
+                                        <option value="18">36</option>
+                                        <option value="19">37</option>
+                                        <option value="20">38</option>
+                                        <option value="21">39</option>
+                                        <option value="22">40</option>
+                                        <option value="22">41</option>
+                                        <option value="22">42</option>
+                                        <option value="22">43</option>
+                                        <option value="22">44</option>
+                                        <option value="22">45</option>
+                                    </select>
+                                    <p>Colores disponibles</p>
+                                </div>
+                                <div class="colores">
+                                    <button class="negro" onclick="colores(9,1)"></button><button class="blanco" onclick="colores(9,3)"></button><button class="rosa" onclick="colores(9,6)"></button><button class="gris" onclick="colores(9,7)"></button><button class="azul" onclick="colores(9,2)"></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    
+                    <!--ZAPATILLAS NIKE CON PLATAFORMA-->
+                    <div class="fondo_emergente" id="f10">
+                        <div class="carta" id="z10">
+                            <div class="imagen_producto">
+                                <img onclick="emergente(10)" id="10" src="img/Zapatillas/Zapatillas 10/1.jpeg" alt="">
+                            </div>
+                            <div class="descripcion" id="d10">
+                                <p class="salida" id="x10" onclick="emergente_salir(10)">x</p>
+                                <p class="categoria" id="c10">Zapatillas</p>
+                                <h3 class="nombre" id="m10">NIKE CON PLATAFORMA</h3>
+                                <p class="precio" id="p10">$5890</p>
+                                <div  id="talle10" class="talles">
+                                    <p>Talles disponibles</p>
+                                    <select name="talles" id="t10">                    
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="22">23</option>
+                                        <option value="22">24</option>
+                                        <option value="22">25</option>
+                                        <option value="22">26</option>
+                                    </select>
+                                    <p>Colores disponibles</p>
+                                </div>
+                                <div class="colores">
+                                    <button class="negro" onclick="colores(10,1)"></button></button><button class="rosa" onclick="colores(10,6)"></button><button class="rojo" onclick="colores(10,8)"></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                <!--ZAPATILLAS PUMA NIÑOS-->
+                <div class="fondo_emergente" id="f11">
+                    <div class="carta" id="z11">
+                        <div class="imagen_producto">
+                            <img onclick="emergente(11)" id="11" src="img/Zapatillas/Zapatillas 11/2.jpeg" alt="">
+                        </div>
+                        <div class="descripcion" id="d11">
+                            <p class="salida" id="x11" onclick="emergente_salir(11)">x</p>
+                            <p class="categoria" id="c11">Zapatillas</p>
+                            <h3 class="nombre" id="m11">PUMA NIÑOS</h3>
+                            <p class="precio" id="p11">$5800</p>
+                            <div  id="talle11" class="talles">
+                                <p>Talles disponibles</p>
+                                <select name="talles" id="t11">                    
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="22">23</option>
+                                    <option value="22">24</option>
+                                    <option value="22">25</option>
+                                    <option value="22">26</option>
+                                </select>
+                                <p>Colores disponibles</p>
+                            </div>
+                            <div class="colores">
+                                <button class="azul" onclick="colores(11,2)"></button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            
+            <!--ZAPATILLAS LE COQ SPORTIF NIÑOS-->
+            <div class="fondo_emergente" id="f12">
+                <div class="carta" id="z12">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(12)" id="12" src="img/Zapatillas/Zapatillas 12/6.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d12">
+                        <p class="salida" id="x12" onclick="emergente_salir(12)">x</p>
+                        <p class="categoria" id="c12">Zapatillas</p>
+                        <h3 class="nombre" id="m12">LE COQ SPORTIF NIÑOS</h3>
+                        <p class="precio" id="p12">$6050</p>
+                        <div  id="talle12" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t12">                    
+                                <option value="17">27</option>
+                                <option value="18">28</option>
+                                <option value="19">29</option>
+                                <option value="20">30</option>
+                                <option value="21">31</option>
+                                <option value="22">32</option>
+                                <option value="17">33</option>
+                                <option value="18">34</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="rosa" onclick="colores(12,6)"></button><button class="gris" onclick="colores(12,7)"></button><button class="rojo" onclick="colores(12,8)"></button><button class="violeta" onclick="colores(12,9)"></button><button class="gris" onclick="colores(12,77)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--ZAPATILLAS VANS-->
+            <div class="fondo_emergente" id="f13">
+                <div class="carta" id="z13">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(13)" id="13" src="img/Zapatillas/Zapatillas 13/3.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d13">
+                        <p class="salida" id="x13" onclick="emergente_salir(13)">x</p>
+                        <p class="categoria" id="c13">Zapatillas</p>
+                        <h3 class="nombre" id="m13">VANS</h3>
+                        <p class="precio" id="p13">$5800</p>
+                        <div  id="talle13" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t13">                    
+                                <option value="17">35</option>
+                                <option value="18">36</option>
+                                <option value="19">37</option>
+                                <option value="20">38</option>
+                                <option value="21">39</option>
+                                <option value="22">40</option>
+                                <option value="22">41</option>
+                                <option value="22">42</option>
+                                <option value="22">43</option>
+                                <option value="22">44</option>
+                               
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="blanco" onclick="colores(13,3)"></button><button class="negro" onclick="colores(13,1)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--ZAPATILLAS  NEW BALANCE-->
+                <div class="fondo_emergente" id="f14">
+                    <div class="carta" id="z14">
+                        <div class="imagen_producto">
+                            <img onclick="emergente(14)" id="14" src="img/Zapatillas/Zapatillas 14/3.jpeg" alt="">
+                        </div>
+                        <div class="descripcion" id="d14">
+                            <p class="salida" id="x14" onclick="emergente_salir(14)">x</p>
+                            <p class="categoria" id="c14">Zapatillas</p>
+                            <h3 class="nombre" id="m14">NEW BALANCE</h3>
+                            <p class="precio" id="p14">$6400</p>
+                            <div  id="talle14" class="talles">
+                                <p>Talles disponibles</p>
+                                <select name="talles" id="t14">                    
+                                    <option value="17">35</option>
+                                    <option value="18">36</option>
+                                    <option value="19">37</option>
+                                    <option value="20">38</option>
+                                    <option value="21">39</option>
+                                    <option value="22">40</option>
+                                    <option value="22">41</option>
+                                    <option value="22">42</option>
+                                    <option value="22">43</option>
+                                    <option value="22">44</option>
+                                   
+                                </select>
+                                <p>Colores disponibles</p>
+                            </div>
+                            <div class="colores">
+                                <button class="blanco" onclick="colores(14,3)"></button><button class="negro" onclick="colores(14,1)"></button><button class="amarillo" onclick="colores(14,5)"></button><button class="rosa" onclick="colores(14,6)"></button><button class="rojo" onclick="colores(14,8)"></button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+            <!--ZAPATILLAS NIKE AIR-->
+            <div class="fondo_emergente" id="f15">
+                <div class="carta" id="z15">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(15)" id="15" src="img/Zapatillas/Zapatillas 15/11.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d15">
+                        <p class="salida" id="x15" onclick="emergente_salir(15)">x</p>
+                        <p class="categoria" id="c15">Zapatillas</p>
+                        <h3 class="nombre" id="m15">NIKE AIR</h3>
+                        <p class="precio" id="p15">$6600</p>
+                        <div  id="talle15" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t15">                    
+                                <option value="17">35</option>
+                                <option value="18">36</option>
+                                <option value="19">37</option>
+                                <option value="20">38</option>
+                                <option value="21">39</option>
+                                <option value="22">40</option>
+                                <option value="22">41</option>
+                                <option value="22">42</option>
+                                <option value="22">43</option>
+                                <option value="22">44</option>
+                                <option value="22">45</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="negro" onclick="colores(15,11)"></button><button class="blanco" onclick="colores(15,3)"></button><button class="negro" onclick="colores(15,1)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+            <!--ZAPATILLAS NIKE AIR-->
+            <div class="fondo_emergente" id="f16">
+                <div class="carta" id="z16">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(16)" id="16" src="img/Zapatillas/Zapatillas 16/10.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d16">
+                        <p class="salida" id="x16" onclick="emergente_salir(16)">x</p>
+                        <p class="categoria" id="c16">Zapatillas</p>
+                        <h3 class="nombre" id="m16">PUMA CON PLATAFORMA</h3>
+                        <p class="precio" id="p16">$6400</p>
+                        <div  id="talle16" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t16">                    
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="negro" onclick="colores(16,1)"></button><button class="rosa" onclick="colores(16,6)"></button><button class="verde" onclick="colores(16,10)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--ZAPATILLAS PUMA-->
+            <div class="fondo_emergente" id="f17">
+                <div class="carta" id="z17">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(17)" id="17" src="img/Zapatillas/Zapatillas 17/1.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d17">
+                        <p class="salida" id="x17" onclick="emergente_salir(17)">x</p>
+                        <p class="categoria" id="c17">Zapatillas</p>
+                        <h3 class="nombre" id="m17">PUMA</h3>
+                        <p class="precio" id="p17">$6200</p>
+                        <div  id="talle17" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t17">                    
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="negro" onclick="colores(17,1)"></button><button class="blanco" onclick="colores(17,3)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--ZAPATILLAS BOTITAS JORDAN-->
+            <div class="fondo_emergente" id="f18">
+                <div class="carta" id="z18">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(18)" id="18" src="img/Zapatillas/Zapatillas 18/6.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d18">
+                        <p class="salida" id="x18" onclick="emergente_salir(18)">x</p>
+                        <p class="categoria" id="c18">Zapatillas</p>
+                        <h3 class="nombre" id="m18">BOTITAS JORDAN</h3>
+                        <p class="precio" id="p18">$7200</p>
+                        <div  id="talle18" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t18">                    
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="rosa" onclick="colores(18,6)"></button><button class="rojo" onclick="colores(18,8)"><button class="azul" onclick="colores(18,2)"></button></button><button class="verde" onclick="colores(18,10)"></button><button class="blanco" onclick="colores(18,3)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--ZAPATILLAS NIKE SPORT-->
+            <div class="fondo_emergente" id="f19">
+                <div class="carta" id="z19">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(19)" id="19" src="img/Zapatillas/Zapatillas 19/2.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d19">
+                        <p class="salida" id="x19" onclick="emergente_salir(19)">x</p>
+                        <p class="categoria" id="c19">Zapatillas</p>
+                        <h3 class="nombre" id="m19">NIKE SPORT</h3>
+                        <p class="precio" id="p19">$6300</p>
+                        <div  id="talle19" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t19">                    
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="rosa" onclick="colores(19,6)"></button><button class="azul" onclick="colores(19,2)"></button><button class="verde" onclick="colores(19,10)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--ZAPATILLAS NIKE NIÑOS-->
+            <div class="fondo_emergente" id="f20">
+                <div class="carta" id="z20">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(20)" id="20" src="img/Zapatillas/Zapatillas 20/8.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d20">
+                        <p class="salida" id="x20" onclick="emergente_salir(20)">x</p>
+                        <p class="categoria" id="c20">Zapatillas</p>
+                        <h3 class="nombre" id="m20">NIKE NIÑOS</h3>
+                        <p class="precio" id="p20">$5800</p>
+                        <div  id="talle20" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t20">                    
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="22">23</option>
+                                <option value="22">24</option>
+                                <option value="22">25</option>
+                                <option value="22">26</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="rosa" onclick="colores(20,6)"></button><button class="rojo" onclick="colores(20,8)"></button><button class="violeta" onclick="colores(20,9)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--BORCEGOS-->
+            <div class="fondo_emergente" id="f21">
+                <div class="carta" id="z21">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(21)" id="21" src="img/Zapatillas/Zapatillas 21/1.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d21">
+                        <p class="salida" id="x21" onclick="emergente_salir(21)">x</p>
+                        <p class="categoria" id="c21">Borcegos</p>
+                        <h3 class="nombre" id="m21">BORCEGO ADULTOS</h3>
+                        <p class="precio" id="p21">$7800</p>
+                        <div  id="talle21" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t21">                    
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="negro" onclick="colores(21,1)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--BORCEGOS-->
+            <div class="fondo_emergente" id="f22">
+                <div class="carta" id="z22">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(22)" id="22" src="img/Zapatillas/Zapatillas 22/1.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d22">
+                        <p class="salida" id="x22" onclick="emergente_salir(22)">x</p>
+                        <p class="categoria" id="c22">Borcegos</p>
+                        <h3 class="nombre" id="m22">BORCEGO ADULTOS</h3>
+                        <p class="precio" id="p22">$7800</p>
+                        <div  id="talle22" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t22">                    
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="negro" onclick="colores(22,1)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--Sandalias fila-->
+            <div class="fondo_emergente" id="f23">
+                <div class="carta" id="z23">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(23)" id="23" src="img/Zapatillas/Zapatillas 23/1.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d23">
+                        <p class="salida" id="x23" onclick="emergente_salir(23)">x</p>
+                        <p class="categoria" id="c23">Sandalias</p>
+                        <h3 class="nombre" id="m23">FILA</h3>
+                        <p class="precio" id="p23">$5200</p>
+                        <div  id="talle23" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t23">                    
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="negro" onclick="colores(23,1)"></button><button class="blanco" onclick="colores(23,3)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <!--BOTITAS MARRON-->
+            <div class="fondo_emergente" id="f24">
+                <div class="carta" id="z24">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(24)" id="24" src="img/Zapatillas/Zapatillas 24/4.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d24">
+                        <p class="salida" id="x24" onclick="emergente_salir(24)">x</p>
+                        <p class="categoria" id="c24">Botitas</p>
+                        <h3 class="nombre" id="m24">NIÑO-ADULTO</h3>
+                        <p class="precio" id="p24">$5200</p>
+                        <div  id="talle24" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t24"> 
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="22">23</option>
+                                <option value="22">24</option>
+                                <option value="22">25</option>
+                                <option value="22">26</option>                   
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="marron" onclick="colores(24,4)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+            <!--sandalias floreadas-->
+            <div class="fondo_emergente" id="f25">
+                <div class="carta" id="z25">
+                    <div class="imagen_producto">
+                        <img onclick="emergente(25)" id="25" src="img/Zapatillas/Zapatillas 25/4.jpeg" alt="">
+                    </div>
+                    <div class="descripcion" id="d25">
+                        <p class="salida" id="x25" onclick="emergente_salir(25)">x</p>
+                        <p class="categoria" id="c25">Sandalias</p>
+                        <h3 class="nombre" id="m25">FLOREADAS Y BASICAS</h3>
+                        <p class="precio" id="p25">$3650</p>
+                        <div  id="talle25" class="talles">
+                            <p>Talles disponibles</p>
+                            <select name="talles" id="t25"> 
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="22">23</option>
+                                <option value="22">24</option>
+                                <option value="22">25</option>
+                                <option value="22">26</option>
+                                <option value="17">27</option>
+                                <option value="18">28</option>
+                                <option value="19">29</option>
+                                <option value="20">30</option>
+                                <option value="21">31</option>
+                                <option value="22">32</option>
+                                <option value="17">33</option>
+                                <option value="18">34</option>                   
+                                
+                            </select>
+                            <p>Colores disponibles</p>
+                        </div>
+                        <div class="colores">
+                            <button class="blanco" onclick="colores(25,3)"></button><button class="negro" onclick="colores(25,1)"></button><button class="marron" onclick="colores(25,4)"><button class="rosa" onclick="colores(25,6)"></button></button><button class="blanco" onclick="colores(25,33)"><button class="negro" onclick="colores(25,11)"></button><button class="marron" onclick="colores(25,44)"></button><button class="rosa" onclick="colores(25,66)"></button></button><button class="blanco" onclick="colores(25,333)"></button><button class="gris" onclick="colores(25,7)"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+        <!--Botitas niños adulto-->
+                <div class="fondo_emergente" id="f26">
+                    <div class="carta" id="z26">
+                        <div class="imagen_producto">
+                            <img onclick="emergente(26)" id="26" src="img/Zapatillas/Zapatillas 26/9.jpeg" alt="">
+                        </div>
+                        <div class="descripcion" id="d26">
+                            <p class="salida" id="x26" onclick="emergente_salir(26)">x</p>
+                            <p class="categoria" id="c26">Sandalias</p>
+                            <h3 class="nombre" id="m26">NIÑO-ADULTO</h3>
+                            <p class="precio" id="p26">$5200</p>
+                            <div  id="talle26" class="talles">
+                                <p>Talles disponibles</p>
+                                <select name="talles" id="t26"> 
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="22">23</option>
+                                    <option value="22">24</option>
+                                    <option value="22">25</option>
+                                    <option value="22">26</option>                   
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                </select>
+                                <p>Colores disponibles</p>
+                            </div>
+                            <div class="colores">
+                                <button class="violeta" onclick="colores(26,9)"></button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+        <!--Sandalias mariposa-->
+        <div class="fondo_emergente" id="f27">
+            <div class="carta" id="z27">
+                <div class="imagen_producto">
+                    <img onclick="emergente(27)" id="27" src="img/Zapatillas/Zapatillas 27/3.jpeg" alt="">
+                </div>
+                <div class="descripcion" id="d27">
+                    <p class="salida" id="x27" onclick="emergente_salir(27)">x</p>
+                    <p class="categoria" id="c27">Sandalias</p>
+                    <h3 class="nombre" id="m27">MARIPOSA</h3>
+                    <p class="precio" id="p27">$3200</p>
+                    <div  id="talle27" class="talles">
+                        <p>Talles disponibles</p>
+                        <select name="talles" id="t27"> 
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                        </select>
+                        <p>Colores disponibles</p>
+                    </div>
+                    <div class="colores">
+                        <button class="negro" onclick="colores(27,1)"></button><button class="blanco" onclick="colores(27,3)"></button><button class="rosa" onclick="colores(27,6)"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <!--ZAPATILLAS CON ABROJO-->
+        <div class="fondo_emergente" id="f28">
+            <div class="carta" id="z28">
+                <div class="imagen_producto">
+                    <img onclick="emergente(28)" id="28" src="img/Zapatillas/Zapatillas 28/1.jpeg" alt="">
+                </div>
+                <div class="descripcion" id="d28">
+                    <p class="salida" id="x28" onclick="emergente_salir(28)">x</p>
+                    <p class="categoria" id="c28">Zapatillas</p>
+                    <h3 class="nombre" id="m28">ABROJO</h3>
+                    <p class="precio" id="p28">$6000</p>
+                    <div  id="talle28" class="talles">
+                        <p>Talles disponibles</p>
+                        <select name="talles" id="t28"> 
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="22">23</option>
+                            <option value="22">24</option>
+                            <option value="22">25</option>
+                            <option value="22">26</option>
+                        </select>
+                        <p>Colores disponibles</p>
+                    </div>
+                    <div class="colores">
+                        <button class="negro" onclick="colores(28,1)"></button><button class="rosa" onclick="colores(28,6)"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <!--ZAPATILLAS NEW BALANCE NIÑOS-->
+        <div class="fondo_emergente" id="f29">
+            <div class="carta" id="z29">
+                <div class="imagen_producto">
+                    <img onclick="emergente(29)" id="29" src="img/Zapatillas/Zapatillas 29/7.jpeg" alt="">
+                </div>
+                <div class="descripcion" id="d29">
+                    <p class="salida" id="x29" onclick="emergente_salir(29)">x</p>
+                    <p class="categoria" id="c29">Zapatillas</p>
+                    <h3 class="nombre" id="m29">NEW BALANCE NIÑOS</h3>
+                    <p class="precio" id="p29">$5250</p>
+                    <div  id="talle29" class="talles">
+                        <p>Talles disponibles</p>
+                        <select name="talles" id="t29"> 
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="22">23</option>
+                            <option value="22">24</option>
+                            <option value="22">25</option>
+                            <option value="22">26</option>
+                            <option value="17">27</option>
+                            <option value="18">28</option>
+                            <option value="19">29</option>
+                            <option value="20">30</option>
+                            <option value="21">31</option>
+                            <option value="22">32</option>
+                            <option value="17">33</option>
+                            <option value="18">34</option> 
+                        </select>
+                        <p>Colores disponibles</p>
+                    </div>
+                    <div class="colores">
+                        <button class="azul" onclick="colores(29,2)"></button><button class="rosa" onclick="colores(29,6)"></button><button class="gris" onclick="colores(29,7)"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <!--ZAPATILLAS NIKE GAMUZA-->
+        <div class="fondo_emergente" id="f30">
+            <div class="carta" id="z30">
+                <div class="imagen_producto">
+                    <img onclick="emergente(30)" id="30" src="img/Zapatillas/Zapatillas 30/1.jpeg" alt="">
+                </div>
+                <div class="descripcion" id="d30">
+                    <p class="salida" id="x30" onclick="emergente_salir(30)">x</p>
+                    <p class="categoria" id="c30">Zapatillas</p>
+                    <h3 class="nombre" id="m30">NIKE GAMUZA</h3>
+                    <p class="precio" id="p30">$5600</p>
+                    <div  id="talle30" class="talles">
+                        <p>Talles disponibles</p>
+                        <select name="talles" id="t30"> 
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="22">23</option>
+                            <option value="22">24</option>
+                            <option value="22">25</option>
+                            <option value="22">26</option>
+                            <option value="17">27</option>
+                            <option value="18">28</option>
+                            <option value="19">29</option>
+                            <option value="20">30</option>
+                            <option value="21">31</option>
+                            <option value="22">32</option>
+                            <option value="17">33</option>
+                            <option value="18">34</option> 
+                        </select>
+                        <p>Colores disponibles</p>
+                    </div>
+                    <div class="colores">
+                        <button class="negro" onclick="colores(30,1)"></button><button class="rosa" onclick="colores(30,6)"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        <!--ZAPATILLAS NIKE BASICAS-->
+        <div class="fondo_emergente" id="f31">
+            <div class="carta" id="z31">
+                <div class="imagen_producto">
+                    <img onclick="emergente(31)" id="31" src="img/Zapatillas/Zapatillas 31/1.jpeg" alt="">
+                </div>
+                <div class="descripcion" id="d31">
+                    <p class="salida" id="x31" onclick="emergente_salir(31)">x</p>
+                    <p class="categoria" id="c31">Zapatillas</p>
+                    <h3 class="nombre" id="m31">NIKE BASICAS</h3>
+                    <p class="precio" id="p31">$5900</p>
+                    <div  id="talle31" class="talles">
+                        <p>Talles disponibles</p>
+                        <select name="talles" id="t31"> 
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option> 
+                        </select>
+                        <p>Colores disponibles</p>
+                    </div>
+                    <div class="colores">
+                        <button class="negro" onclick="colores(31,1)"></button><button class="blanco" onclick="colores(31,3)"></button><button class="negro" onclick="colores(31,11)"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    <!--ZAPATILLAS LE COQ REFORZADAS-->
+    <div class="fondo_emergente" id="f32">
+        <div class="carta" id="z32">
+            <div class="imagen_producto">
+                <img onclick="emergente(32)" id="32" src="img/Zapatillas/Zapatillas 32/6.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d32">
+                <p class="salida" id="x32" onclick="emergente_salir(32)">x</p>
+                <p class="categoria" id="c32">Zapatillas</p>
+                <h3 class="nombre" id="m32">LE COQ REFORZADAS</h3>
+                <p class="precio" id="p32">$6500</p>
+                <div  id="talle32" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t32"> 
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>     
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="negro" onclick="colores(32,1)"></button><button class="blanco" onclick="colores(32,3)"></button><button class="rosa" onclick="colores(32,6)"></button><button class="gris" onclick="colores(32,7)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--ZAPATILLAS PLATAFORMA-ADULTO-->
+    <div class="fondo_emergente" id="f33">
+        <div class="carta" id="z33">
+            <div class="imagen_producto">
+                <img onclick="emergente(33)" id="33" src="img/Zapatillas/Zapatillas 33/1.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d33">
+                <p class="salida" id="x33" onclick="emergente_salir(33)">x</p>
+                <p class="categoria" id="c33">Zapatillas</p>
+                <h3 class="nombre" id="m33">PLATAFORMA-ADULTO</h3>
+                <p class="precio" id="p33">$6200</p>
+                <div  id="talle33" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t33">
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="negro" onclick="colores(33,1)"></button><button class="blanco" onclick="colores(33,3)"></button><button class="rosa" onclick="colores(33,6)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--ZAPATILLAS NEW BALANCE-->
+    <div class="fondo_emergente" id="f34">
+        <div class="carta" id="z34">
+            <div class="imagen_producto">
+                <img onclick="emergente(34)" id="34" src="img/Zapatillas/Zapatillas 34/1.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d34">
+                <p class="salida" id="x34" onclick="emergente_salir(34)">x</p>
+                <p class="categoria" id="c34">Zapatillas</p>
+                <h3 class="nombre" id="m34">NEW BALANCE</h3>
+                <p class="precio" id="p34">$5000</p>
+                <div  id="talle34" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t34">
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option> 
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="negro" onclick="colores(34,1)"></button><button class="blanco" onclick="colores(34,3)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--ZAPATILLAS NEW BALANCE-->
+    <div class="fondo_emergente" id="f35">
+        <div class="carta" id="z35">
+            <div class="imagen_producto">
+                <img onclick="emergente(35)" id="35" src="img/Zapatillas/Zapatillas 35/1.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d35">
+                <p class="salida" id="x35" onclick="emergente_salir(35)">x</p>
+                <p class="categoria" id="c35">Sandalias</p>
+                <h3 class="nombre" id="m35">CRUZADAS</h3>
+                <p class="precio" id="p35">$4500</p>
+                <div  id="talle35" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t35">
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="negro" onclick="colores(35,1)"></button><button class="blanco" onclick="colores(35,3)"></button><button class="rosa" onclick="colores(35,6)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--Crocs ADULTO-->
+    <div class="fondo_emergente" id="f36">
+        <div class="carta" id="z36">
+            <div class="imagen_producto">
+                <img onclick="emergente(36)" id="36" src="img/Zapatillas/Zapatillas 36/1.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d36">
+                <p class="salida" id="x36" onclick="emergente_salir(36)">x</p>
+                <p class="categoria" id="c36">Crocs</p>
+                <h3 class="nombre" id="m36">ADULTO</h3>
+                <p class="precio" id="p36">$2150</p>
+                <div  id="talle36" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t36">
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="negro" onclick="colores(36,1)"></button><button class="rojo" onclick="colores(36,8)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <!--Crocs ADULTO-->
+    <div class="fondo_emergente" id="f37">
+        <div class="carta" id="z37">
+            <div class="imagen_producto">
+                <img onclick="emergente(37)" id="37" src="img/Zapatillas/Zapatillas 37/3.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d37">
+                <p class="salida" id="x37" onclick="emergente_salir(37)">x</p>
+                <p class="categoria" id="c37">Zapatillas</p>
+                <h3 class="nombre" id="m37">LE COQ</h3>
+                <p class="precio" id="p37">$5000</p>
+                <div  id="talle37" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t37">
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option> 
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="azul" onclick="colores(37,2)"></button><button class="blanco" onclick="colores(37,3)"></button><button class="rosa" onclick="colores(37,6)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--zapatillas elastizadas-->
+    <div class="fondo_emergente" id="f38">
+        <div class="carta" id="z38">
+            <div class="imagen_producto">
+                <img onclick="emergente(38)" id="38" src="img/Zapatillas/Zapatillas 38/1.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d38">
+                <p class="salida" id="x38" onclick="emergente_salir(38)">x</p>
+                <p class="categoria" id="c38">Zapatillas</p>
+                <h3 class="nombre" id="m38">ELASTIZADAS</h3>
+                <p class="precio" id="p38">$5250</p>
+                <div  id="talle38" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t38">
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="negro" onclick="colores(38,1)"></button><button class="gris" onclick="colores(38,7)"></button><button class="rojo" onclick="colores(38,8)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <!--zapatillas PUMA CON ABROJOs-->
+    <div class="fondo_emergente" id="f39">
+        <div class="carta" id="z39">
+            <div class="imagen_producto">
+                <img onclick="emergente(39)" id="39" src="img/Zapatillas/Zapatillas 39/3.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d39">
+                <p class="salida" id="x39" onclick="emergente_salir(39)">x</p>
+                <p class="categoria" id="c39">Zapatillas</p>
+                <h3 class="nombre" id="m39">PUMA CON ABROJO</h3>
+                <p class="precio" id="p39">$5100</p>
+                <div  id="talle39" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t39">
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="negro" onclick="colores(39,1)"></button><button class="blanco" onclick="colores(39,3)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--zapatillas LE COQ ABROJO-->
+    <div class="fondo_emergente" id="f40">
+        <div class="carta" id="z40">
+            <div class="imagen_producto">
+                <img onclick="emergente(40)" id="40" src="img/Zapatillas/Zapatillas 40/6.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d40">
+                <p class="salida" id="x40" onclick="emergente_salir(40)">x</p>
+                <p class="categoria" id="c40">Zapatillas</p>
+                <h3 class="nombre" id="m40">LE COQ ABROJO</h3>
+                <p class="precio" id="p40">$4700</p>
+                <div  id="talle40" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t40">
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="azul" onclick="colores(40,2)"></button><button class="rosa" onclick="colores(40,6)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--botines mercuri-->
+    <div class="fondo_emergente" id="f41">
+        <div class="carta" id="z41">
+            <div class="imagen_producto">
+                <img onclick="emergente(41)" id="41" src="img/Zapatillas/Zapatillas 41/10.jpeg" alt="">
+            </div>
+            <div class="descripcion" id="d41">
+                <p class="salida" id="x41" onclick="emergente_salir(41)">x</p>
+                <p class="categoria" id="c41">Botines</p>
+                <h3 class="nombre" id="m41">MERCURI</h3>
+                <p class="precio" id="p41">$6000</p>
+                <div  id="talle41" class="talles">
+                    <p>Talles disponibles</p>
+                    <select name="talles" id="t41"> 
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                    </select>
+                    <p>Colores disponibles</p>
+                </div>
+                <div class="colores">
+                    <button class="azul" onclick="colores(41,2)"></button><button class="verde" onclick="colores(41,10)"></button><button class="marron" onclick="colores(41,4)"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+
+
+
+        </section>
+        
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- informacion sobre nosotros-->
+
+<section id="acerca_de_nosotros">
+    
+    <div class="titulo">
+        <div class="contenedor_titulo">
+            <h2>Acerca de nosotros</h2>
+        </div>
+    </div>
+    
+    <div id="contenedor_presentacion">
+        <div id="presentacion">
+            <div><img src="img/presentacion.png" alt=""></div>
+            <p>¡Hola Bienvenido, somos Style! <br> Cuenta con nuestro servicios donde quieras y cuando quieras <br> Podras ver todos nuestros productos con las ultimas actualizaciones <br> Desde la web podras ver detalles mas concretos <br><br> Forma de compra comoda, expecifica y al instante, seleccionando tus necesidades tales como articulos, talles, colores, tambien lugares de encuentro y formas de pagos <br><br> Muchas gracias por visitaros!!!</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="info_metodosdecompra">
+
+
+    <div class="infromacion_preguntas">
+        <h3>Informacion sobre ventas</h3>
+
+        <div class="contenedor_preguntas">
+
+            <div class="tarjetas">
+                <div><p class="pregunta">Metodos de pagos</p><img class="ilustracion" src="img/pagos.png" alt=""><p class="respuesta">-Los pagos se realizan al momento de la entrega.<br>-Aceptamos mercado pago y efectivo.<br>-El pago se realiza una ves reciba el producto. </p></div>
+            </div>
+
+            <div class="tarjetas">
+                <div><p class="pregunta">Pedidos</p><img class="ilustracion" src="img/pedidos.png" alt=""><p class="respuesta">-Se toman pedidos de lunes a jueves.<br>-Se entregan entre sabado y domingo.<br>-Si hacen pedidos un dia viernes, se tomara para la proxima semana.</p></div>
+            </div>
+
+            <div class="tarjetas">
+                <div><p class="pregunta">Envios</p><img class="ilustracion" src="img/entrega.png" alt=""><p class="respuesta">-Los envios van a ser en puntos de encuentros entre ustedes y nosotros.<br>-Podran elegir el lugar que les sea mas comodo o podemos acordar otro punto de encuentro dependiendo las circunstancias.</p></div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="nuestras_redes">
+
+<div class="contenedor_redes">
+    <h3>Contactanos a traves de nuestras redes sociales para hacer tu encargo</h3>
+
+    <div id="redes_sociales">
+    <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100090314546459">
+            <img src="img/facebook.png" alt="">
+            <p>Facebook: Encontranos como Zapatillass Sstyles, publicamos todas las actualizaciones de productos</p>
+            <br><p>Clickea imagen para reedirigirte</p>
+        </a>
+    </div>
+
+    <div class="redes">
+        <a href="https://www.instagram.com/zapas.sstyle/">
+            <img src="img/Instagram-Icon.png" alt="">
+            <p>Instagram: Encontranos como Zapas.sstyle, publicamos todas las actualizaciones de productos al instante</p>
+            <br><p>Clickea imagen para reedirigirte</p>
+        </a>
+    </div>
+
+    <div class="redes">
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLrTFSdPhbgpftPtLdFSnfXpCnsFMRqzklStwRTtVHmTDzmRfRrqwSBKjzdvjJMKtzNbjq">
+            <img src="img/mail.png" alt="">
+            <p>Gmail: Mandanos tus preguntas o pedidos a la nuestro mail zapas.sstyle@gmail.com, te contestaremos en breves</p>
+            <br><p>Clickea imagen para reedirigirte</p>
+        </a>
+    </div>
+    </div>
+</div>
+
+</section>
+
+
+
+<footer>
+    <p>&#169; Zapas.sstyle</p>
+    <p id="saludo">Muchas gracias por visitarnos, te esperamos!!!</p>
+</footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

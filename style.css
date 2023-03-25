@@ -1,0 +1,1087 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(233, 233, 233, 0.616);
+}
+
+#banner{
+    background-image: linear-gradient(0deg, rgba(255, 196, 157, 0.1),rgba(255, 196, 157, 0.1)), url("img/fondo_inicial.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 105.6ch;
+}
+
+/*SECCION HEADER*/
+header{
+    width: 100%;
+    height: 5.5rem;
+    color: aliceblue;
+    background-color:rgba(22, 22, 22, 0.404);
+    position: fixed;
+    box-shadow: 0px 0px 15px black;
+    z-index: 1000;
+}
+
+.contenedor_navegacion{
+    display: flex;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0px 10px;
+    max-width: 1400px;
+    position: relative;
+    z-index: 15000;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 4rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.logo h1{
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+#navegador ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#navegador a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+#navegador a:hover{
+    border-bottom: 2px solid white;
+    background-color: rgba(230, 230, 230, 0.24);
+    transition: all 0.5s;
+}
+
+#navegador ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+#menu_btn{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*SECCION BANNER*/
+.contenedor{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding: 0px 10px;
+    max-width: 1200px;
+    height: 90vh;
+}
+
+#banner_conten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner_conten h2{
+    font-size: 7rem;
+    text-shadow: 0px 0px 5px rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+}
+
+#banner_conten p{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+#banner_conten button{
+    width: 200px;
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: rgb(61, 61, 61);
+}
+
+#banner_conten button:hover{
+    background-color: rgba(185, 185, 185, 0.747);
+    color: rgb(65, 65, 65);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*productos*/
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(92, 92, 92);
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(27, 27, 27, 0.281);
+}
+
+.titulo{
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(121, 121, 121, 0.664);
+    position: sticky;
+    top: 5.5rem;
+    color: aliceblue;
+    z-index: 200;
+    display: flex;
+    justify-content:space-around;
+}
+
+.contenedor_titulo{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_titulo #productos_selector{
+    border: none;
+    width: 200px;
+    box-shadow: 0px 0px 15px white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#contenedor_busqueda h2{
+    font-size: 1.7rem;
+    color: aliceblue;
+    
+}
+
+#contenedor_cartas{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20PX;
+}
+
+#zapatillas{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta{
+    width: 450px;
+    height: 230px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    position: relative;
+}
+
+.imagen_producto{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagen_producto img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.descripcion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: auto;
+}
+
+.categoria{
+    font-size: 1.7rem;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.precio{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+
+.colores{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colores button{
+    border: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 10px 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}
+
+.blanco{
+    background-color: aliceblue;
+}
+
+.negro{
+    background-color: black;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.rojo{
+    background-color: rgb(240, 19, 19);
+}
+
+.amarillo{
+    background-color: rgb(255, 251, 8);
+}
+
+.verde{
+    background-color: rgb(40, 247, 13);
+}
+
+.rosa{
+    background-color: rgb(243, 78, 229);
+}
+
+.violeta{
+    background-color: rgb(174, 0, 255);
+}
+
+.marron{
+    background-color: rgb(235, 157, 12);
+}
+
+.gris{
+    background-color: rgb(119, 119, 119);
+}
+
+
+
+
+.talles{
+    display: none;
+    margin-top: 20px;
+}
+
+.talles p{
+    font-size: 10px;
+}
+
+.talles select{
+    background-color: rgba(92, 92, 92, 0.322);
+    padding: 0px 20px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.talles select option{
+    font-size:20px;
+    text-align: center;
+}
+
+.salida{
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+#acerca_de_nosotros{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 247, 247, 0.63);
+
+}
+
+#presentacion{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    max-width: 1400px;
+    margin: 20px auto;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#contenedor_presentacion{
+    background-color: rgba(255, 255, 255, 0.692);
+}
+
+#presentacion div{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#presentacion div img{
+    width: 60%;
+    overflow: hidden;
+}
+
+#presentacion p{
+    width: 50%;
+    height: 450px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1),rgba(157, 211, 255, 0.1)), url("img/fondoacerca_style.gif");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 30px 15px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px rgb(158, 198, 250);
+
+}
+
+
+
+
+
+
+
+.infromacion_preguntas{
+    width: 100%;
+    height: max-content;
+    background-color: rgba(56, 56, 56, 0.76);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.infromacion_preguntas h3{
+    width: 100%;
+    max-width: 1350px;
+    background-color: aliceblue;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contenedor_preguntas{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas{
+    width: 30%;
+    height: 500px;
+    background-color: rgb(61, 177, 255);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #b5c3ff;
+
+}
+
+
+.tarjetas div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.tarjetas .pregunta{
+    background-color: azure;
+    width: 100%;
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+
+.tarjetas img{
+    width: 220px;
+    height: 200px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+
+.tarjetas .respuesta{
+   color: aliceblue;
+   font-weight: bolder;
+   font-size: 1.25rem;
+}
+
+
+
+
+
+.redes:hover, .tarjetas:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nuestras_redes{
+    width: 100%;
+    height: max-content;
+    background-color: rgba(103, 2, 185, 0.76);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.contenedor_redes{
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+#redes_sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    width: 30%;
+    height: max-content;
+    background-color: #b5c3ff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #b5c3ff;
+}
+
+.redes img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
+.contenedor_redes h3{
+        width: 100%;
+        max-width: 1350px;
+        background-color: aliceblue;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+}
+
+.redes a{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+footer{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #67709b;
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+@media (max-width: 1420px){
+
+    #zapatillas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen_producto{
+        width: 50%;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .imagen_producto img{
+        width: 100%;
+        
+    }
+    
+    .descripcion{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .categoria{
+        font-size: 1.7rem;
+        margin: 20px;
+    }
+    
+    .signo{
+        display: flex;
+    }
+
+    #presentacion p{
+        font-size: 1.3rem;
+    }
+
+
+}
+
+
+
+@media (max-width: 1200px){
+
+    #banner{
+        background-image: linear-gradient(0deg, rgba(255, 196, 157, 0.1),rgba(255, 196, 157, 0.1)), url("img/fondo_secundario.jpg");
+        background-position: center center;
+    }
+    #banner_conten h2{
+        font-size: 5rem;
+    }
+    
+    #banner_conten p{
+        font-size: 1.2rem;
+
+    }
+
+    .logo img{
+        height: 4rem;
+    }
+
+    .logo h1{
+        font-size: 2rem;
+    }
+
+    #presentacion p{
+        font-size: 1.25rem;
+    }
+    
+
+}
+
+
+@media (max-width: 965px){
+
+    
+    header{
+        height: 4.5rem;
+    }
+
+
+    #navegador{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color:rgba(0, 0, 0, 0.604);
+        width: 40%;
+        height: 100%;
+        top: 4.5rem;
+        left: 0;
+        text-align: center;
+        padding: 0px;
+        overflow: hidden;
+        transform: translateX(-100%);
+        transition: all 1s;
+        z-index: 100;
+    }
+
+    #navegador ul{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    #navegador ul li{
+        padding: 10px;
+        border-bottom: 1px solid white;
+        font-weight: bolder;
+        margin: 50px;
+    }
+
+    #navegador a:hover{
+        width: 100%;
+        border-bottom: none;
+        background-color: rgba(230, 230, 230, 0.24);
+        transition: all 0.5s;
+    }
+
+
+    #menu_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #menu_btn img{
+        height: 2.5rem;
+        cursor: pointer;
+    }
+
+    #menu:checked ~ #navegador {
+        transform: translateX(0%);
+        transition: all 1s;
+    }
+
+
+
+    #zapatillas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+    .carta{
+        width: 70%;
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        overflow: auto;
+        padding: 10px;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        position: relative;
+        max-width: 260px;
+    }
+   
+    .imagen_producto{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    
+    .imagen_producto img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .descripcion{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .titulo{
+        top: 4.5rem;
+    }
+
+    #presentacion p{
+        font-size: 1.2rem;
+    }
+    
+
+    .contenedor_titulo #productos_selector{
+        width:30%;
+    }
+
+
+    #nuestras_redes{
+        width: 100%;
+        height: max-content;
+        background-color: rgba(29, 2, 185, 0.76);
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .redes,.tarjetas{
+        margin: 10px;
+    }
+
+
+}
+
+@media (max-width: 837px){
+    .tarjetas{
+        width: 50%;
+        height: 450px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+    .contenedor_preguntas{
+        flex-direction: column;
+    }
+
+
+
+    .redes{
+        width: 50%;
+        height: max-content;;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #redes_sociales{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 750px){
+
+    .tarjetas{
+        width: 80%;
+    }
+
+    .redes{
+        width: 80%;
+    }
+
+    #banner{
+        height: 100vh;
+        background-image: linear-gradient(0deg, rgba(255, 196, 157, 0.1),rgba(255, 196, 157, 0.1)), url("img/fondo_tercero.jpg");
+        background-position: bottom left;
+        padding: 0px 10px;
+    }
+
+    header{
+        left: 0rem;
+    }
+    
+    #navegador{
+        width: 50%;
+    }
+
+    .logo img{
+        height: 3.5rem;
+    }
+
+    .logo h1{
+        font-size: 1.9rem;
+    }
+
+    
+
+    .carta{
+        width: 100%;
+    }
+
+    #presentacion p{
+        font-size: 1.18rem;
+        width: 100%;
+    }
+
+    #presentacion div{
+        display: none;
+    }
+    
+    .tarjetas .respuesta{
+        font-size: 1.20rem;
+     }
+
+
+     footer #saludo{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 400px){
+    #presentacion p{
+        font-size: 1.1rem;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 370px){
+
+    #zapatillas{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .carta{
+        width: 100%;
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        overflow: auto;
+        padding: 10px;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        position: relative;
+        max-width: 260px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-height: 860px){
+    #navegador ul li{
+        padding: 10px;
+        border-bottom: 1px solid white;
+        font-weight: bolder;
+        margin: 30px;
+    }
+
+}
+
+
+
+@media (max-height: 700px){
+    #navegador ul li{
+        margin: 10px;
+    }
+
+    #banner_conten p{
+        display: none;
+    }
+
+    #banner_conten button{
+        margin-top: 60px;
+    }
+}
+
+
+
+@media (max-width: 360px){
+    .titulo{
+        font-size: 0.8rem;
+    }
+    
+
+    .tarjetas{
+        height: max-content;
+    }
+
+    #contenedor_presentacion , #acerca_de_nosotros, #presentacion p{
+        height: max-content;
+    }
+}
+
+
+@media (max-width: 300px){
+    .tarjetas img{
+        width: 100%;
+    }
+
+    
+}
+
+
+
+
+
+#click{
+    width: 100%;
+    max-width: 1375px;
+    background-color: #2e2e2ee3;
+    font-size: 1.2rem;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px white;
+    padding: 9px;
+}
