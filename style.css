@@ -955,12 +955,15 @@ footer{
 
 
 
-@media (max-width: 400px){
+@media (max-width: 407px){
     #presentacion p{
         font-size: 1.1rem;
 
     }
 
+     #zapatillas{
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -973,9 +976,6 @@ footer{
 
 @media (max-width: 370px){
 
-    #zapatillas{
-        grid-template-columns: 1fr;
-    }
 
     
     .carta{
