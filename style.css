@@ -231,6 +231,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 20PX;
+    overflow: hidden;
 }
 
 #zapatillas{
@@ -242,7 +243,6 @@ main{
     padding: 0px 10px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .carta{
