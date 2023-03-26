@@ -183,7 +183,6 @@ main{
     flex-direction: column;
     text-align: center;
     background-color: rgba(27, 27, 27, 0.281);
-    overflow: hidden;
 }
 
 .titulo{
@@ -243,6 +242,7 @@ main{
     padding: 0px 10px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .carta{
