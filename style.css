@@ -183,6 +183,7 @@ main{
     flex-direction: column;
     text-align: center;
     background-color: rgba(27, 27, 27, 0.281);
+    overflow: hidden;
 }
 
 .titulo{
