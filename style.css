@@ -962,10 +962,27 @@ footer{
     }
 }
 
-@media (max-width: 372px){
-    #zapatillas{
-        grid-template-columns: 1fr;
+/**/
+
+@media (max-width: 400px){
+    #presentacion p{
+        font-size: 1.1rem;
+
     }
+
+    .carta{
+        width: 92%;
+    }
+
+    .descripcion{
+        overflow: hidden;
+    }
+
+    #zapatillas{
+        gap: 10px 0px;
+    }
+    
+
 }
 
 
@@ -979,7 +996,7 @@ footer{
 
     
     .carta{
-        width: 100%;
+        width: 90%;
         height: 450px;
         background-color: rgb(255, 255, 255);
         display: flex;
@@ -994,6 +1011,45 @@ footer{
     }
     
 }
+
+
+@media (max-width: 360px){
+    #presentacion p{
+        font-size: 1.1rem;
+
+    }
+
+    .carta{
+        width: 85%;
+    }
+
+    .descripcion{
+        overflow: hidden;
+    }
+
+    #zapatillas{
+        gap: 10px 0px;
+    }
+    
+
+}
+
+
+@media (max-width: 330px){
+    #zapatillas{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/**/
+
+
+
+
+
+
+
 
 
 
