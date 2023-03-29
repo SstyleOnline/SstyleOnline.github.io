@@ -183,3 +183,11 @@ function selec(){
 
 }
 
+
+
+
+
+function desactivar_menu() { 
+    document.getElementById("menu").checked=false;
+}
+
