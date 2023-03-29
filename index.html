@@ -28,11 +28,11 @@
             <nav id="navegador">
                 
                 <ul> 
-                    <a href="#banner"><li>Inicio</li></a>
-                    <a href="#productos"><li>Productos</li></a>
-                    <a href="#acerca_de_nosotros"><li>Acerca de nosotros</li></a>
-                    <a href="#info_metodosdecompra"><li>Metodos</li></a>
-                    <a href="#nuestras_redes"><li>Contactanos</li></a>
+                    <a href="#banner"><li onclick="desactivar_menu()">Inicio</li></a>
+                    <a href="#productos"><li onclick="desactivar_menu()">Productos</li></a>
+                    <a href="#acerca_de_nosotros"><li onclick="desactivar_menu()">Acerca de nosotros</li></a>
+                    <a href="#info_metodosdecompra"><li onclick="desactivar_menu()">Metodos</li></a>
+                    <a href="#nuestras_redes"><li onclick="desactivar_menu()">Contactanos</li></a>
                 </ul>
             </nav>
 
@@ -42,7 +42,7 @@
 
 
 
-    <div id="banner_conten" class="contenedor">
+    <div id="banner_conten" class="contenedor" onclick="desactivar_menu()">
         <h2>Tienda Online</h2>
         <p>Bienvenidos al sitio web oficial de Style!!!<br> Donde encontraras todos nuestros productos actualizados e informacion sobre nosotros!!!<br>Tambien podras seleccionar tus productos y ver todas sus caracteristicas...</p>
         <form action="#productos"><button>Comencemos</button></form>
@@ -53,7 +53,7 @@
 
 
 <!--Todos los productos-->
-<main id="productos">
+<main id="productos" onclick="desactivar_menu()">
 
 
 
@@ -1481,7 +1481,7 @@
 
 <!-- informacion sobre nosotros-->
 
-<section id="acerca_de_nosotros">
+<section id="acerca_de_nosotros" onclick="desactivar_menu()">
     
     <div class="titulo">
         <div class="contenedor_titulo">
@@ -1498,7 +1498,7 @@
 
 </section>
 
-<section id="info_metodosdecompra">
+<section id="info_metodosdecompra" onclick="desactivar_menu()">
 
 
     <div class="infromacion_preguntas">
@@ -1524,7 +1524,7 @@
 </section>
 
 
-<section id="nuestras_redes">
+<section id="nuestras_redes" onclick="desactivar_menu()">
 
 <div class="contenedor_redes">
     <h3>Contactanos a traves de nuestras redes sociales para hacer tu encargo</h3>
@@ -1560,7 +1560,7 @@
 
 
 
-<footer>
+<footer onclick="desactivar_menu()">
     <p>&#169; Zapas.sstyle</p>
     <p id="saludo">Muchas gracias por visitarnos, te esperamos!!!</p>
 </footer>
