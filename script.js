@@ -191,3 +191,27 @@ function desactivar_menu() {
     document.getElementById("menu").checked=false;
 }
 
+
+
+
+
+
+ScrollReveal().reveal('#banner');
+ScrollReveal().reveal('.contenedor_navegacion', { delay: 500 });
+ScrollReveal().reveal('#navegador', { delay: 600 });
+ScrollReveal().reveal('#banner_conten', { delay: 700 });
+ScrollReveal().reveal('#productos', { delay: 500 });
+ScrollReveal().reveal('.carta', { delay: 200 });
+ScrollReveal().reveal('#acerca_de_nosotros', { delay: 500 });
+ScrollReveal().reveal('#presentacion', { delay: 500 });
+ScrollReveal().reveal('#info_metodosdecompra', { delay: 500 });
+ScrollReveal().reveal('.tarjetas', { delay: 500 });
+ScrollReveal().reveal('#nuestras_redes', { delay: 500 });
+ScrollReveal().reveal('.redes', { delay: 500 });
+
+
+
+
+
+
+
