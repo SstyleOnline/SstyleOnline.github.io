@@ -197,8 +197,6 @@ function desactivar_menu() {
 
 
 ScrollReveal().reveal('#banner');
-ScrollReveal().reveal('.contenedor_navegacion', { delay: 500 });
-ScrollReveal().reveal('#navegador', { delay: 600 });
 ScrollReveal().reveal('#banner_conten', { delay: 700 });
 ScrollReveal().reveal('#productos', { delay: 500 });
 ScrollReveal().reveal('.carta', { delay: 200 });
