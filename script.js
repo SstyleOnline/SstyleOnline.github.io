@@ -96,13 +96,13 @@ function saberalto() {
 
 function selec(){
 
-    let todo=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41];
+    let todo=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42];
     let zapas=[1,8,9,10,11,12,13,14,15,16,17,18,19,20,28,29,30,31,32,33,34,37,38,39,40];
     let botines=[3,4,41];
     let crocs=[36];
     let borcegos=[2,5,21,22,24];
     let sandalias=[23,25,26,27,35];
-    let pantuflas=[6,7];
+    let pantuflas=[6,7,42];
 
     let ver=document.getElementById("productos_selector").value;
 
@@ -110,13 +110,13 @@ function selec(){
 
     switch (ver) {
         case "Todos":
-            for(let i=0; i<41; i++){
+            for(let i=0; i<42; i++){
                 document.getElementById("f"+todo[i]).style.display="flex";
             }
         break;
 
         case "Zapatillas":
-            for(let i=0; i<41; i++){
+            for(let i=0; i<42; i++){
                 document.getElementById("f"+todo[i]).style.display="none";
             }
             for(let i=0; i<25; i++){
@@ -125,7 +125,7 @@ function selec(){
         break;
 
         case "botines":
-            for(let i=0; i<41; i++){
+            for(let i=0; i<42; i++){
                 document.getElementById("f"+todo[i]).style.display="none";
             }
             for(let i=0; i<3; i++){
@@ -134,7 +134,7 @@ function selec(){
         break;
 
         case "Crocs":
-            for(let i=0; i<41; i++){
+            for(let i=0; i<42; i++){
                 document.getElementById("f"+todo[i]).style.display="none";
             }
             for(let i=0; i<1; i++){
@@ -143,7 +143,7 @@ function selec(){
         break;
 
         case "Borcegos":
-            for(let i=0; i<41; i++){
+            for(let i=0; i<42; i++){
                 document.getElementById("f"+todo[i]).style.display="none";
             }
             for(let i=0; i<5; i++){
@@ -152,7 +152,7 @@ function selec(){
         break;
 
         case "Sandalias":
-            for(let i=0; i<41; i++){
+            for(let i=0; i<42; i++){
                 document.getElementById("f"+todo[i]).style.display="none";
             }
             for(let i=0; i<5; i++){
@@ -161,10 +161,10 @@ function selec(){
         break;
 
         case "Pantuflas":
-            for(let i=0; i<41; i++){
+            for(let i=0; i<42; i++){
                 document.getElementById("f"+todo[i]).style.display="none";
             }
-            for(let i=0; i<2; i++){
+            for(let i=0; i<3; i++){
                 document.getElementById("f"+pantuflas[i]).style.display="block";
             }
         break;
