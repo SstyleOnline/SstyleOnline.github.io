@@ -689,6 +689,29 @@ footer{
 }
 
 
+@media (max-width: 1388px){
+    .redes{
+        margin: 10px;
+    }
+
+    
+}
+
+
+
+
+
+@media (max-width: 1118px){
+    #redes_sociales{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    
+}
+
 
 @media (max-width: 1200px){
 
