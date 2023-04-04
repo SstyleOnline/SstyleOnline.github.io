@@ -428,15 +428,15 @@ function encargar(id,modelo, defa){
     
 
     if (colors!=undefined) {
-        direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+colorencargos+")%20talle%20("+talleEncargo+"),%20enter%20para%20encargar...";
+        direccion.href="https://wa.me/541126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+colorencargos+")%20talle%20("+talleEncargo+"),%20enter%20para%20encargar...";
         if (id==6||id==7||id==25||id==26||id==42) {
-            direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+colorencargos+")%20talle%20("+talleEncargo+"),%20porfavor%20expecificar%20que%20modelo%20(),%20enter%20para%20encargar...";
+            direccion.href="https://wa.me/541126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+colorencargos+")%20talle%20("+talleEncargo+"),%20porfavor%20expecificar%20que%20modelo%20(),%20enter%20para%20encargar...";
         }
     }
     else{
-        direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+defau+")%20talle%20("+talleEncargo+"),%20enter%20para%20encargar...";
+        direccion.href="https://wa.me/541126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+defau+")%20talle%20("+talleEncargo+"),%20enter%20para%20encargar...";
         if (id==6||id==7||id==25||id==26||id==42) {
-            direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+defau+")%20talle%20("+talleEncargo+"),%20porfavor%20expecificar%20que%20modelo%20(),%20enter%20para%20encargar...";
+            direccion.href="https://wa.me/541126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+defau+")%20talle%20("+talleEncargo+"),%20porfavor%20expecificar%20que%20modelo%20(),%20enter%20para%20encargar...";
         }
     }
     
