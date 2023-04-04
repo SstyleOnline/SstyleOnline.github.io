@@ -1,8 +1,10 @@
 let activador=0;
 let ancho;
+let colors;
 
 function colores(modelo,color) {
-
+    colors=color;
+    console.log(colors);
     document.getElementById(modelo).src="img/Zapatillas/Zapatillas "+modelo+"/"+color+".jpeg";
 }
 
@@ -48,6 +50,8 @@ function emergente(zapatilla) {
     document.getElementById("d"+zapatilla).style.background="rgba(199, 199, 199, 0.171)";
     document.getElementById("x"+zapatilla).style.display="block";
 
+    document.getElementById("b"+zapatilla).display="flex";
+
 
 }
 
@@ -82,6 +86,8 @@ function emergente_salir(zapatilla) {
     document.getElementById("c"+zapatilla).style.margin="20px 20px 10px 20px";
     document.getElementById("d"+zapatilla).style.background="white";
     document.getElementById("x"+zapatilla).style.display="none";
+
+    document.getElementById("b"+zapatilla).display="none";
 
     
 }
@@ -212,4 +218,230 @@ ScrollReveal().reveal('.redes', { delay: 500 });
 
 
 
+function encargar(id,modelo, defa){
+
+    let talleEncargo=document.getElementById("t"+id).value;
+    let colorencargos;
+    let defau;
+
+
+    switch (colors) {
+        case 1:
+            colorencargos="negro";
+            break;
+        case 2:
+            colorencargos="azul";
+            break;
+        case 3:
+            colorencargos="blanco";
+            break;
+        case 4:
+            colorencargos="marron";
+            break;
+        case 5:
+            colorencargos="amarillo";
+            break;
+        case 6:
+            colorencargos="rosa";
+            break;
+        case 7:
+            colorencargos="gris";
+            break;
+        case 8:
+            colorencargos="rojo";
+            break;
+        case 9:
+            colorencargos="violeta";
+            break;
+        case 10:
+            colorencargos="verde";
+            break;   
+            
+        case 11:
+            colorencargos="negro";
+            break;   
+        case 111:
+            colorencargos="negro";
+            break;
+            
+        case 22:
+            colorencargos="azul";
+            break;  
+            
+        case 222:
+            colorencargos="azul";
+            break;
+
+        case 33:
+            colorencargos="blanco";
+            break;  
+            
+        case 333:
+            colorencargos="blanco";
+            break;
+
+        case 44:
+            colorencargos="marron";
+            break;  
+            
+        case 444:
+            colorencargos="marron";
+            break;
+
+        case 66:
+            colorencargos="rosa";
+            break;
+
+        case 666:
+            colorencargos="rosa";
+            break;
+
+        case 77:
+            colorencargos="gris";
+            break;
+
+        case 777:
+            colorencargos="gris";
+            break;
+
+        case 88:
+            colorencargos="rojo";
+            break;
+
+        case 888:
+            colorencargos="rojo";
+            break;
+
+        case 99:
+            colorencargos="violeta";
+            break;
+
+        case 999:
+            colorencargos="violeta";
+            break;
+
+            
+    }
+
+
+    switch (defa) {
+        case 1:
+            defau="negro";
+            break;
+        case 2:
+            defau="azul";
+            break;
+        case 3:
+            defau="blanco";
+            break;
+        case 4:
+            defau="marron";
+            break;
+        case 5:
+            defau="amarillo";
+            break;
+        case 6:
+            defau="rosa";
+            break;
+        case 7:
+            defau="gris";
+            break;
+        case 8:
+            defau="rojo";
+            break;
+        case 9:
+            defau="violeta";
+            break;
+        case 10:
+            defau="verde";
+            break;    
+        
+        defau="negro";
+            break;   
+        case 111:
+            defau="negro";
+            break;
+            
+        case 22:
+            defau="azul";
+            break;  
+            
+        case 222:
+            defau="azul";
+            break;
+
+        case 33:
+            defau="blanco";
+            break;  
+            
+        case 333:
+            defau="blanco";
+            break;
+
+        case 44:
+            defau="marron";
+            break;  
+            
+        case 444:
+            defau="marron";
+            break;
+
+        case 66:
+            defau="rosa";
+            break;
+
+        case 666:
+            defau="rosa";
+            break;
+
+        case 77:
+            defau="gris";
+            break;
+
+        case 777:
+            defau="gris";
+            break;
+
+        case 88:
+            defau="rojo";
+            break;
+
+        case 888:
+            defau="rojo";
+            break;
+
+        case 99:
+            defau="violeta";
+            break;
+
+        case 999:
+            defau="violeta";
+            break;
+    }
+
+
+    
+
+    let direccion=document.getElementById("b"+id);
+
+
+    
+
+    if (colors!=undefined) {
+        direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+colorencargos+")%20talle%20("+talleEncargo+"),%20enter%20para%20encargar...";
+        if (id==6||id==7||id==25||id==26||id==42) {
+            direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+colorencargos+")%20talle%20("+talleEncargo+"),%20porfavor%20expecificar%20que%20modelo%20(),%20enter%20para%20encargar...";
+        }
+    }
+    else{
+        direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+defau+")%20talle%20("+talleEncargo+"),%20enter%20para%20encargar...";
+        if (id==6||id==7||id==25||id==26||id==42) {
+            direccion.href="https://wa.me/1126912486?text=Estas%20por%20encargar%20("+modelo+")%20color%20("+defau+")%20talle%20("+talleEncargo+"),%20porfavor%20expecificar%20que%20modelo%20(),%20enter%20para%20encargar...";
+        }
+    }
+    
+    
+
+    console.log(modelo,talleEncargo,colorencargos,direccion);
+}
 
