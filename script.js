@@ -50,7 +50,7 @@ function emergente(zapatilla) {
     document.getElementById("d"+zapatilla).style.background="rgba(199, 199, 199, 0.171)";
     document.getElementById("x"+zapatilla).style.display="block";
 
-    document.getElementById("b"+zapatilla).display="flex";
+    document.getElementById("b"+zapatilla).style.display="flex";
 
 
 }
@@ -87,7 +87,7 @@ function emergente_salir(zapatilla) {
     document.getElementById("d"+zapatilla).style.background="white";
     document.getElementById("x"+zapatilla).style.display="none";
 
-    document.getElementById("b"+zapatilla).display="none";
+    document.getElementById("b"+zapatilla).style.display="none";
 
     
 }
